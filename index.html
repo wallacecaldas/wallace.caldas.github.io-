@@ -43,12 +43,22 @@ body.site-active{
 /* LOGO */
 
 .logo-top-left{
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 15px;
-  width: 180px;
-  z-index: 10000;
+  width: 380px;
+  z-index: 1000;
 }
+@media (max-width:768px){
+
+  .logo-top-left{
+    width:380px;
+    top:10px;
+    left:10px;
+  }
+
+}
+
 
 /* CONTAINERS PADRÃO */
 
@@ -101,8 +111,8 @@ body.site-active{
 }
 
 .profile-text p{
-  text-align:justify;
-  line-height:1.7;
+  text-align:left;
+  line-height:1.9;
   font-size:1rem;
   color:#f1f1f1;
 }
