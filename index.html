@@ -31,9 +31,18 @@ body.site-active{
   color:#fff;
   text-align:center;
   background-image:url('https://gabrielcarmo.carrd.co/assets/images/bg.jpg?v=af173aab');
-  background-size:cover;
-  background-position:center;
-  background-attachment:fixed;
+   background-size: cover;       /* Ajusta sem distorcer */
+  background-position: center;  /* Centraliza */
+  background-repeat: no-repeat; /* Não repete */
+  background-attachment: fixed; /* Opcional (pode tirar no mobile) */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* Melhora no celular */
+    background-size: cover;
+    background-position: center;
+  }
+}
+
   min-height:100vh;
   display:flex;
   flex-direction:column;
@@ -354,7 +363,7 @@ width:fit-content;
 
 
 /* ================== MOBILE AJUSTE ================== */
-@media (max-width:768px){
+@media (max-width:708px){
 
   /* BODY */
   body.site-active{
