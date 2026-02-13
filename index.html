@@ -174,7 +174,7 @@ width:fit-content;
 .review-avatar{
   width:40px;
   height:40px;
-  background:#ec693f;
+  background:#3f6452;
   color:#000000;
   border-radius:50%;
   display:flex;
@@ -238,8 +238,10 @@ width:fit-content;
 
 
 .fale{background:#ec693f;}
-.instagram{background:#e63c3c;}
+.instagram{background:#3f6452;}
 .tiktok{background:#6b4a76;}
+.avaliacoes{background:#f3ac55;}   /* dourado elegante */
+.duvidas{background:#46739f;}      /* azul acinzentado */
 
 
 /* FAQ */
@@ -349,6 +351,22 @@ width:fit-content;
   margin-left:auto;   /* empurra ícone pra direita */
   font-size:1.4rem;
 }
+
+
+/* ================== MOBILE AJUSTE ================== */
+@media (max-width:768px){
+
+  /* BODY */
+  body.site-active{
+    padding:1.2rem;
+  }
+
+  /* PERFIL */
+  .profile-box{
+    flex-direction:column;
+    text-align
+
+
 
 
 </style>
@@ -570,13 +588,12 @@ A duração varia conforme as necessidades e objetivos de cada pessoa.
   </a>
 
  
-  <a class="instagram" href="javascript:void(0)" onclick="toggleSection('faq')">
+  <a class="duvidas" href="javascript:void(0)" onclick="toggleSection('faq')">
     <span>Dúvidas</span>
     <i class="fas fa-circle-question"></i>
   </a>
 
-  <!-- AVALIAÇÕES -->
-  <a class="fale" href="javascript:void(0)" onclick="toggleSection('avaliacoes')">
+  <a class="avaliacoes" href="javascript:void(0)" onclick="toggleSection('avaliacoes')">
     <span>Avaliações</span>
     <i class="fas fa-star"></i>
   </a>
