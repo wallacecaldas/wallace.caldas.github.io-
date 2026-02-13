@@ -38,7 +38,7 @@ body.site-active{
   display:flex;
   flex-direction:column;
   align-items:center;
-  padding:2rem;
+  padding:3rem;
 }
 
 /* LOGO */
@@ -47,7 +47,7 @@ body.site-active{
   position: absolute;
   top: 15px;
   left: 15px;
-  width: 380px;
+  width: 180px;
   z-index: 1000;
 }
 @media (max-width:768px){
@@ -71,7 +71,7 @@ body.site-active{
   padding:2.5rem;
   border-radius:20px;
   max-width:900px;
-  width:100%;
+width:fit-content;
   margin-bottom:2.5rem;
   box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
@@ -194,62 +194,53 @@ body.site-active{
   display:flex;
   flex-direction:column;
   gap:1rem;
-  padding:2rem;
+  padding:0;
+  background:transparent; /* REMOVE FUNDO MARROM */
+  box-shadow:none;
 }
+
+/* BOTÕES */
 
 .buttons a{
   display:flex;
-  justify-content:center;
-  padding:1rem 1.5rem;
+  justify-content:space-between;
+  align-items:center;
+
+  width:461.33px;
+  height:96px;
+
+  padding:0 1.8rem;
+
   border-radius:50px;
   color:#fff;
   text-decoration:none;
   font-weight:700;
-  transition:.3s;
+  font-size:1.1rem;
+
+ 
+
 }
+
+/* HOVER */
 
 .buttons a:hover{
   transform:scale(1.03);
+  opacity:0.9;
 }
 
-.google{background:#f4b66f;}
+/* ÍCONES */
+
+.buttons i{
+  font-size:1.3rem;
+}
+
+/* CORES */
+
+
 .fale{background:#ec693f;}
 .instagram{background:#e63c3c;}
 .tiktok{background:#6b4a76;}
-.linkedin{background:#5d5867;}
-.facebook{background:#3d6257;}
 
-/* FOOTER */
-
-.footer{
-  margin-top:2rem;
-  font-size:.8rem;
-  color:#fff;
-}
-
-/* RESPONSIVO */
-
-@media (max-width:768px){
-
-  .profile-box{
-    flex-direction:column;
-    gap:2rem;
-    text-align:center;
-  }
-
-  .profile-photo{
-    width:220px;
-  }
-
-  .profile-photo img{
-    height:300px;
-  }
-
-  .profile-text{
-    text-align:center;
-  }
-
-}
 
 /* FAQ */
 
@@ -346,8 +337,23 @@ body.site-active{
   opacity:1;
 }
 
+/* CONTAINER SÓ DOS BOTÕES */
+
+.buttons-wrapper{
+  width:100%;
+  display:flex;
+  justify-content:center; /* CENTRALIZA */
+}
+
+.buttons a i{
+  margin-left:auto;   /* empurra ícone pra direita */
+  font-size:1.4rem;
+}
+
 
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body class="site-active">
@@ -373,11 +379,8 @@ class="logo-top-left">
 
       <p>
         Psicólogo junguiano, pós-graduando em Saúde Mental da População LGBTQIAPN+, com experiência no acompanhamento de processos de autoconhecimento e aprofundamento psíquico, incluindo integração psicodélica.
-
         Compreendo a terapia como um espaço de transformação, no qual é possível ampliar a consciência sobre si, elaborar vivências significativas e fortalecer recursos internos para lidar com os desafios da vida.
-
         Tenho experiência no acompanhamento de demandas relacionadas à ansiedade e à depressão, oferecendo um espaço de escuta ética, atenta e respeitosa, que considera a singularidade de cada pessoa e sua história.
-
         Se você sente o desejo de se compreender melhor e viver com mais equilíbrio e autenticidade, entre em contato para iniciarmos essa jornada!
       </p>
 
@@ -394,74 +397,79 @@ class="logo-top-left">
 <h2>Avaliações</h2>
 
 <div class="carousel-wrapper">
-
 <div class="reviews-container">
 
-
+<!-- 1 -->
 <div class="review-box">
-<div class="review-header">
-<div class="review-avatar">A</div>
-<div>
-<div class="review-name">Ana P.</div>
-<div class="review-date">2025</div>
-</div>
-</div>
-<div class="review-stars">★★★★★</div>
-<div class="review-text">Profissional incrível, mudou minha vida.</div>
+  <div class="review-header">
+    <div class="review-avatar">C</div>
+    <div>
+      <div class="review-name">Carlos Eduardo Hozana</div>
+      <div class="review-date">2024–2025</div>
+    </div>
+  </div>
+
+  <div class="review-stars">★★★★★</div>
+
+  <div class="review-text">
+    Desde 2024 faço acompanhamento com o Gabriel e posso afirmar com tranquilidade que é um profissional exemplar, muito atencioso e qualificado. Recomendo demais!
+  </div>
 </div>
 
-
+<!-- 2 -->
 <div class="review-box">
-<div class="review-header">
-<div class="review-avatar">M</div>
-<div>
-<div class="review-name">Marcos L.</div>
-<div class="review-date">2025</div>
-</div>
-</div>
-<div class="review-stars">★★★★★</div>
-<div class="review-text">Atendimento humano e acolhedor.</div>
+  <div class="review-header">
+    <div class="review-avatar">T</div>
+    <div>
+      <div class="review-name">Thiago Pires</div>
+      <div class="review-date">2024</div>
+    </div>
+  </div>
+
+  <div class="review-stars">★★★★★</div>
+
+  <div class="review-text">
+    Profissional incrível, com uma escuta atenta e respeitosa. Me senti acolhido desde o início. Uma referência de psicólogo ético, cuidadoso e profissional.
+  </div>
 </div>
 
-
+<!-- 3 -->
 <div class="review-box">
-<div class="review-header">
-<div class="review-avatar">R</div>
-<div>
-<div class="review-name">Renata S.</div>
-<div class="review-date">2024</div>
-</div>
-</div>
-<div class="review-stars">★★★★★</div>
-<div class="review-text">Me senti ouvida desde o primeiro dia.</div>
+  <div class="review-header">
+    <div class="review-avatar">C</div>
+    <div>
+      <div class="review-name">Carol Ewaci</div>
+      <div class="review-date">2024</div>
+    </div>
+  </div>
+
+  <div class="review-stars">★★★★★</div>
+
+  <div class="review-text">
+    O atendimento foi maravilhoso. Gabriel me ajudou em um momento difícil da minha vida amorosa e sou eternamente grata por tudo.
+  </div>
 </div>
 
-
+<!-- 4 -->
 <div class="review-box">
-<div class="review-header">
-<div class="review-avatar">D</div>
-<div>
-<div class="review-name">Daniel C.</div>
-<div class="review-date">2024</div>
-</div>
-</div>
-<div class="review-stars">★★★★★</div>
-<div class="review-text">Excelente profissional.</div>
+  <div class="review-header">
+    <div class="review-avatar">A</div>
+    <div>
+      <div class="review-name">Adriana Ferreira Barbosa</div>
+      <div class="review-date">2024–2025</div>
+    </div>
+  </div>
+
+  <div class="review-stars">★★★★★</div>
+
+  <div class="review-text">
+    Super indico! Faço terapia há um ano e venho aprendendo todos os dias mais sobre mim. Só tenho a agradecer.
+  </div>
 </div>
 
 
-<div class="review-box">
-<div class="review-header">
-<div class="review-avatar">L</div>
-<div>
-<div class="review-name">Luciana M.</div>
-<div class="review-date">2024</div>
-</div>
-</div>
-<div class="review-stars">★★★★★</div>
-<div class="review-text">Recomendo sem dúvidas.</div>
-</div>
 
+</div>
 
 </div>
 
@@ -542,48 +550,48 @@ A duração varia conforme as necessidades e objetivos de cada pessoa.
 
 <!-- LINKS -->
 
-<div class="buttons">
+<div class="buttons-wrapper">
+  <div class="buttons">
 
   <a class="fale" href="https://api.whatsapp.com/send/?phone=13992081387&text&type=phone_number&app_absent=0" target="_blank">
-    WhatsApp
+    <span>Fale comigo</span>
+    <i class="fab fa-whatsapp"></i>
   </a>
 
-  <a class="google" href="https://share.google/DIK1hfvLWg7KrOSH3" target="_blank">
-    Google
-  </a>
 
   <a class="instagram" href="https://www.instagram.com/psi.gabrielcarmo/" target="_blank">
-    Instagram
+    <span>Instagram</span>
+    <i class="fab fa-instagram"></i>
   </a>
 
-  <a class="tiktok" href="https://www.tiktok.com/@psi.gabrielcarmo?_t=ZM-8y5g2DgegLw&_r=1" target="_blank">
-    TikTok
+  <a class="tiktok" href="https://www.tiktok.com/@psi.gabrielcarmo" target="_blank">
+    <span>TikTok</span>
+    <i class="fab fa-tiktok"></i>
   </a>
 
-  <a class="linkedin" href="https://www.linkedin.com/in/gabriel-carmo-816170135/" target="_blank">
-    LinkedIn
+ 
+  <a class="instagram" href="javascript:void(0)" onclick="toggleSection('faq')">
+    <span>Dúvidas</span>
+    <i class="fas fa-circle-question"></i>
   </a>
 
-  <a class="facebook" href="https://www.facebook.com/gabrielbcarmo" target="_blank">
-    Facebook
+  <!-- AVALIAÇÕES -->
+  <a class="fale" href="javascript:void(0)" onclick="toggleSection('avaliacoes')">
+    <span>Avaliações</span>
+    <i class="fas fa-star"></i>
   </a>
 
-<a class="google" href="javascript:void(0)" onclick="toggleSection('avaliacoes')">
-Avaliações
-</a>
 
-<a class="instagram" href="javascript:void(0)" onclick="toggleSection('faq')">
-Dúvidas Frequentes
-</a>
-
-
+  </div>
 </div>
+
+
 
 
 <!-- FOOTER -->
 
 <div class="footer">
-© Gabriel Carmo
+©2026 Gabriel Carmo
 </div>
 
 
